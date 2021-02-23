@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "NomadCoder Lecture",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leejunseon/Youtube_CloneCoding.git"
@@ -17,6 +14,16 @@
   },
   "homepage": "https://github.com/leejunseon/Youtube_CloneCoding#readme",
   "dependencies": {
+    "@babel/core": "^7.13.1",
+    "@babel/node": "^7.13.0",
+    "@babel/preset-env": "^7.13.0",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index.js --delay 2"
   }
 }
